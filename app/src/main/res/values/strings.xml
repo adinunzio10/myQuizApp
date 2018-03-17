@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">myQuizApp</string>
+    <string name="question_one">Which of the following superheroes are members of the Justice League?</string>
+    <string name="question_two">Question 2</string>
+    <string name="question_three">Question 3</string>
+    <string name="question_four">Question 4</string>
+    <string name="question_five">Question 5</string>
+
+    <string name="answer_one_question_one">Batman</string>
+    <string name="answer_two_question_one">Superman</string>
+    <string name="answer_three_question_one">Iron Man</string>
+    <string name="answer_four_question_one">Wonder Woman</string>
+
+    <string name="answer_one_question_two">Answer 1</string>
+    <string name="answer_two_question_two">Answer 2</string>
+    <string name="answer_three_question_two">Answer 3</string>
+
 </resources>

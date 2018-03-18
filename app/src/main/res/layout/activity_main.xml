@@ -60,11 +60,10 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
                 android:text="@string/question_two" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -80,7 +79,12 @@
                     android:layout_height="wrap_content"
                     android:text="@string/answer_three_question_two"
                     android:id="@+id/answerThreeQuestionTwo"/>
-            </LinearLayout>
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grade_test"
+                android:onClick="gradeTest"/>
 
         </LinearLayout>
     </ScrollView>

@@ -28,18 +28,13 @@ public class MainActivity extends AppCompatActivity {
         boolean answerThreeQuestionOne = answerThreeQuestionOneCheckBox.isChecked();
         CheckBox answerFourQuestionOneCheckBox = findViewById(R.id.answerFourQuestionOne);
         boolean answerFourQuestionOne = answerFourQuestionOneCheckBox.isChecked();
-        if (answerOneQuestionOne && answerTwoQuestionOne && answerFourQuestionOne && !answerThreeQuestionOne) {
-            questionOneCorrect = true;
-        }
-    }
+        questionOneCorrect = (answerOneQuestionOne && answerTwoQuestionOne && answerFourQuestionOne && !answerThreeQuestionOne);}
+
 
     public void gradeQuestionTwo() {
         // Figure out if question 2 is correct
         RadioButton answerOneQuestionTwoRadioButton = findViewById(R.id.answerOneQuestionTwo);
-        boolean answerOneQuestionTwo = answerOneQuestionTwoRadioButton.isChecked();
-        if (answerOneQuestionTwo) {
-            questionTwoCorrect = true;
-        }
+        questionTwoCorrect = (answerOneQuestionTwoRadioButton.isChecked());
     }
 
     public void gradeTest(View view) {

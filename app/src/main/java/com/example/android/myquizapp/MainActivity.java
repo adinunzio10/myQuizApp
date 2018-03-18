@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     boolean questionOneCorrect;
     boolean questionTwoCorrect;
+    boolean questionThreeCorrect;
 
     public void gradeQuestionOne() {
         // Figure out if question 1 is correct
@@ -37,10 +39,18 @@ public class MainActivity extends AppCompatActivity {
         questionTwoCorrect = (answerOneQuestionTwoRadioButton.isChecked());
     }
 
+    public void gradeQuestionThree() {
+        // Figure out if question 3 is correct
+        EditText answerQuestionThree = findViewById(R.id.answerQuestionThree);
+        String userAnswerQuestionThree = answerQuestionThree.getText().toString();
+        questionThreeCorrect = (userAnswerQuestionThree.equals("Avengers"));
+    }
+
     public void gradeTest(View view) {
         gradeQuestionOne();
         gradeQuestionTwo();
-        if (questionOneCorrect && questionTwoCorrect) {
+        gradeQuestionThree();
+        if (questionOneCorrect && questionTwoCorrect && questionThreeCorrect) {
             Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show();

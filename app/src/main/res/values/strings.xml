@@ -2,7 +2,7 @@
     <string name="app_name">myQuizApp</string>
     <string name="question_one">Which of the following superheroes are members of the Justice League?</string>
     <string name="question_two">Justice League is from what comicbook line?</string>
-    <string name="question_three">Question 3</string>
+    <string name="question_three">What is Marvels version of DCs Justice League?</string>
     <string name="question_four">Question 4</string>
     <string name="question_five">Question 5</string>
 
@@ -14,6 +14,8 @@
     <string name="answer_one_question_two">DC Comics</string>
     <string name="answer_two_question_two">Marvel Comics</string>
     <string name="answer_three_question_two">Neither</string>
+
+    <string name="question_hint">Answer</string>
 
     <string name="grade_test">Grade Test</string>
 
